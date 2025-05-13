@@ -12,17 +12,21 @@ const Hero = () => {
 
       <div className="flex flex-col sm:flex-row gap-4">
         <a
-          href="/AshleyBroussard2025Resume.pdf"
-          className="bg-lavender text-white font-sans font-semibold px-6 py-3 rounded shadow hover:bg-purple-300 transition"
-        >
-          View Résumé
-        </a>
-        <a
-          href="#contact"
-          className="border-2 border-emerald-500 text-emerald-600 font-sans font-semibold px-6 py-3 rounded hover:bg-emerald-50 transition"
-        >
-          Hire Me
-        </a>
+  href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/edit?usp=sharing"
+  className="bg-lavender text-white font-sans font-semibold px-6 py-3 rounded shadow hover:bg-purple-300 transition"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Hire Me
+</a>
+
+<a
+  href="#contact"
+  className="border-2 border-emerald-500 text-emerald-600 font-sans font-semibold px-6 py-3 rounded hover:bg-emerald-50 transition"
+>
+  Contact
+</a>
+
       </div>
     </section>
   );
