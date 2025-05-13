@@ -6,5 +6,5 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "/", // Root path since it's a personal GitHub Pages site
+	base: "./", 
 });
