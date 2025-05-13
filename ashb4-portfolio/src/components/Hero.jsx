@@ -21,7 +21,7 @@ const Hero = () => {
 </a>
 
 <a
-  href="#contact"
+  href="tel:225-571-1410"
   className="border-2 border-emerald-500 text-emerald-600 font-sans font-semibold px-6 py-3 rounded hover:bg-emerald-50 transition"
 >
   Contact
