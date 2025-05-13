@@ -1,4 +1,8 @@
 import './index.css';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+
 
 const projects = [
   {
@@ -23,8 +27,10 @@ const projects = [
 
 function App() {
   return (
-    <main className="bg-cream min-h-screen text-gray-900 font-sans">
-      <section className="max-w-screen-lg mx-auto py-20 px-6">
+      <main className="bg-cream min-h-screen text-gray-900 font-sans">
+      <Hero />
+      {/* Your project cards section here */}
+      <section className="max-w-screen-lg mx-auto py-2 px-6">
         <h1 className="text-5xl font-serif font-bold text-center mb-12">Featured Projects</h1>
 
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -54,7 +60,8 @@ function App() {
             </div>
           ))}
         </div>
-      </section>
+      </section>   
+      <Footer />
     </main>
   );
 }
