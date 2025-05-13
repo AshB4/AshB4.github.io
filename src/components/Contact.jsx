@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <section id="contact" className="bg-emerald-50 text-gray-800 py-16 px-6 text-center">
-      <h2 className="text-4xl font-serif font-bold mb-6">Get in Touch</h2>
+      <h2 className="text-4xl font-serif font-bold mb-6 text-darkpurple">Get in Touch</h2>
       <p className="text-lg font-sans mb-8 max-w-xl mx-auto">
         Want to work together? I’m open to remote roles, contract work, and cool collaborations.
         Reach out below or check out what I’ve built.

@@ -9,6 +9,7 @@ export default {
 				serif: ["Merriweather", "ui-serif"],
 			},
 			colors: {
+				darkpurple: "#6b21a8",
 				lavender: "#CBB7E2",
 				cream: "#FAF3E0",
 				emerald: "#10B981",

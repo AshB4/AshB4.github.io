@@ -2,7 +2,7 @@
 const Resume = () => {
   return (
     <section id="resume" className="py-20 px-6 bg-white text-gray-900 text-center">
-      <h2 className="text-4xl font-serif font-bold mb-6">Résumé</h2>
+      <h2 className="text-4xl font-serif font-bold mb-6 text-darkpurple">Résumé</h2>
       <p className="text-lg max-w-2xl mx-auto mb-6">
         Full-stack developer with a UX focus, automation mindset, and a track record of launching useful tools and accessible sites.
       </p>

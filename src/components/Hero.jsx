@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section className="bg-cream flex flex-col justify-center items-center text-center px-6 pt-24 pb-12">
-      <h1 className="text-5xl md:text-6xl font-serif font-bold text-gray-900 mb-6">
+      <h1 className="text-5xl md:text-6xl font-serif font-bold text-darkpurple mb-6">
         Hi, I’m Ashley
       </h1>
 
@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="flex flex-col sm:flex-row gap-4">
         <a
   href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/edit?usp=sharing"
-  className="bg-lavender text-white font-sans font-semibold px-6 py-3 rounded shadow hover:bg-purple-300 transition"
+  className="bg-lavender text-white font-sans font-bold px-6 py-3 rounded shadow hover:bg-purple-300 transition"
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -22,7 +22,7 @@ const Hero = () => {
 
 <a
   href="tel:225-571-1410"
-  className="border-2 border-emerald-500 text-emerald-600 font-sans font-semibold px-6 py-3 rounded hover:bg-emerald-50 transition"
+  className="border-2 border-emerald-500 text-emerald-600 font-sans font-bold px-6 py-3 rounded hover:bg-emerald-50 transition"
 >
   Contact
 </a>

@@ -25,7 +25,7 @@ const products = [
 const GumroadProducts = () => {
   return (
     <section id="products" className="py-20 px-6 bg-cream text-gray-900 text-center">
-      <h2 className="text-4xl font-serif font-bold mb-6">Gumroad Products</h2>
+      <h2 className="text-4xl font-serif font-bold mb-6 text-darkpurple">Gumroad Products</h2>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {products.map((product, index) => (
           <div key={index} className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">

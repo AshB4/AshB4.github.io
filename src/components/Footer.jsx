@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-lavender text-white text-center py-8 mt-2">
-      <p className="text-md font-sans mb-2">
+      <p className="text-lg font-sans mb-2">
         Made with 💻, ☕, and Tailwind by Ashley Broussard
       </p>
 
