@@ -13,7 +13,7 @@ const products = [
   {
     name: 'Goblin Self-Care Kit',
     description: 'Printable journal, affirmations, coloring pages and cursed spa rituals for chaotic cuties.',
-    link: 'https://fleurdevie.gumroad.com/l/goblins',
+    link: 'https://fleurdevie.gumroad.com/l/goblin-core-coloring-affirmations',
   },
   {
     name: 'AI-Powered Grad Launch Kit',
