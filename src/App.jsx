@@ -7,11 +7,14 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import GumroadProducts from './components/GumroadProducts';
 import BackToTop from './components/BackToTop';
+import ParallaxBanner from './components/PictureBlock';
 
 function App() {
   return (
     <main className="bg-cream min-h-screen text-gray-900 font-sans">
       <Hero />
+      
+      {/* wip <ParallaxBanner /> */}
       <Projects />
       <Resume />
       <GumroadProducts />

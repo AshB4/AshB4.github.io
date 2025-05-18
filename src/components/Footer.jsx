@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-lavender text-white text-center py-8 mt-2">
       <p className="text-lg font-sans mb-2">
-        Made with 💻, ☕, and Tailwind by Ashley Broussard
+        Made with 💻, ☕, and Tailwind and questionable sleep cycles. © 2025 Ashley Broussard
       </p>
 
       <div className="flex justify-center gap-6 text-sm">
