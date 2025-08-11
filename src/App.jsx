@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import GumroadProducts from './components/GumroadProducts';
 import BackToTop from './components/BackToTop';
-import ParallaxBanner from './components/PictureBlock';
+
 
 function App() {
   return (

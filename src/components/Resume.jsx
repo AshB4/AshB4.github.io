@@ -1,25 +1,42 @@
 // src/components/Resume.jsx
 const Resume = () => {
   return (
-    <section id="resume" className="py-20 px-6 bg-white text-gray-900 text-center">
-      <h2 className="text-4xl font-serif font-bold mb-6 text-darkpurple">Résumé</h2>
-      <p className="text-lg max-w-2xl mx-auto mb-6">
-        Full-stack developer with a UX focus, automation mindset, and a track record of launching useful tools and accessible sites.
+    <section
+      id="resume"
+      aria-labelledby="resume-heading"
+      className="py-20 px-6 bg-white text-gray-900"
+    >
+      {/* Heading is the programmatic label for the section */}
+      <h2 id="resume-heading" className="text-4xl font-serif font-bold mb-6 text-gray-900 text-center">
+        Resume
+      </h2>
+
+      <p className="text-lg max-w-2xl mx-auto mb-6 text-center">
+        Full‑stack developer with a UX focus, automation mindset, and a track record of launching useful tools and accessible sites.
       </p>
-      <ul className="text-left max-w-xl mx-auto list-disc list-inside mb-6 text-gray-700">
-        <li>Built insurance comparison platform with filters for fixed-income users (SeniorHealthcareSolution.net)</li>
-        <li>Won SQL Saturday Hackathon with full-stack civic app</li>
-        <li>Maintained 50+ client websites (WordPress/MODX)</li>
-        <li>Launched GitHub commit automation ritual tool (Green Square Ritual)</li>
+
+      {/* Use a <ul> for lists and keep language concrete and scannable */}
+      <ul className="text-left max-w-xl mx-auto list-disc pl-6 mb-8 text-gray-800">
+        <li>
+          Built an insurance comparison platform with readable typography, high-contrast themes, and simple filters for fixed‑income users
+          <span className="sr-only"> — external site</span> (SeniorHealthcareSolution.net)
+        </li>
+        <li>Won SQL Saturday Hackathon with a full‑stack civic app focused on clarity and performance</li>
+        <li>Maintained 50+ client websites and improved uptime and navigation consistency (WordPress and MODX)</li>
+        <li>Launched a GitHub commit automation tool and documented safe usage for new developers</li>
       </ul>
-      <a
-        href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/edit?usp=sharing"
-        className="inline-block bg-lavender text-white font-semibold px-6 py-3 rounded shadow hover:bg-purple-400 transition"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Full Résumé
-      </a>
+
+      {/* Button-styled link with: high contrast, visible focus, and new‑tab notice for screen readers */}
+      <p className="text-center">
+        <a
+          href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/edit?usp=sharing"
+          className="inline-block bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-400 hover:bg-indigo-800 transition"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View full resume <span className="sr-only">(opens in a new tab)</span>
+        </a>
+      </p>
     </section>
   );
 };

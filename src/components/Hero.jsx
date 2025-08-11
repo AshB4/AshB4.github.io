@@ -1,46 +1,96 @@
+import Ash from '../assets/ColorPopAsh.webp';
+
 const Hero = () => {
   return (
-    <section className="bg-cream flex flex-col justify-center items-center text-center px-6 pt-24 pb-12">
-      <h1 className="text-5xl md:text-6xl font-serif font-bold text-darkpurple mb-6">
-        Hi, I’m Ashley Broussard
-      </h1>
-      
-<p class="text-lg mt-2 max-w-xl">
-Full-stack developer and UX strategist based in Louisiana, with a flair for turning wild ideas into real, working tools.
-I build everything from insurance apps that serve seniors to AI bots that engage fans — fast, accessible, and purpose-driven.
-</p>
-<p class="mt-4 font-semibold text-accent">
-Looking for a remote or hybrid dev role where I can ship quickly, solve real problems, and have fun doing it.
-</p>
-<br />
-      <div className="flex flex-col sm:flex-row gap-4">
-        <a
-  href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/edit?usp=sharing"
-  className="bg-lavender text-white font-sans font-bold px-6 py-3 rounded shadow hover:bg-purple-300 transition"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Resume
-</a>
+    <section id="hero" aria-labelledby="hero-title" className="bg-cream">
+      <div className="mx-auto max-w-6xl px-6 pt-20 pb-12">
+        <div className="grid items-center gap-10 md:grid-cols-12">
+          {/* Image */}
+          <div className="md:col-span-5">
+            <img
+              src={Ash}
+              alt="Portrait of Ashley Broussard"
+              className="aspect-[4/5] w-full rounded-2xl object-cover shadow-xl"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
 
-<a
-  href="tel:225-571-1410"
-  className="border-2 border-emerald-500 text-emerald-600 font-sans font-bold px-6 py-3 rounded hover:bg-emerald-50 transition"
->
-  Contact
-</a>
+          {/* Text */}
+          <div className="md:col-span-7 text-center md:text-left">
+            <h1
+              id="hero-title"
+              className="font-serif text-5xl md:text-6xl font-bold text-darkpurple leading-tight"
+            >
+              Hi, I’m <span className="whitespace-nowrap">Ashley Broussard</span>
+            </h1>
 
+            <p className="mt-5 text-lg text-slate-800">
+              Full-stack developer and UX strategist turning wild ideas into working tools
+              from senior-friendly insurance apps to engaging AI bots. Fast, accessible, and purpose-driven.
+            </p>
+
+            <p className="mt-3 font-semibold text-accent">
+              Open to local, remote or hybrid roles where I can ship quickly and solve real problems.
+            </p>
+
+            {/* CTAs */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a
+                href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/preview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-md bg-lavender px-6 py-3 font-semibold text-white shadow hover:bg-purple-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender"
+              >
+                View Resume
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+
+              <a
+                href="mailto:Fleurdeviefarmsllc@gmail.com"
+                className="inline-flex items-center justify-center rounded-md border-2 border-emerald-500 px-6 py-3 font-semibold text-emerald-700 hover:bg-emerald-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+                aria-label="Email Ashley Broussard"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div></div>
- <h2 class="text-2xl font-bold mt-10">Tech Stack</h2>
-<p class="mt-2">
-  <strong>Languages & Frameworks:</strong> JavaScript, React, Node.js, PHP, WordPress, MODX, MySQL, PostgreSQL<br/>
-  <strong>Frontend Tools:</strong> Tailwind CSS, Bootstrap, Material UI, Formik, Yup, HTML5, CSS3<br/>
-  <strong>Dev & Ops:</strong> Git, GitHub, Netlify, Heroku, cPanel, REST APIs, Postman<br/>
-  <strong>Design & Strategy:</strong> Figma, UX Writing, Accessibility (WCAG), SEO, Google Analytics<br/>
-  <strong>Workflow & Platforms:</strong> GoHighLevel, Jira, ChatGPT, Agile / Scrum
-</p>
 
+      {/* Tech Stack (centered section, left-aligned content for readability) */}
+      <section
+        id="tech-stack"
+        aria-labelledby="tech-stack-title"
+        className="mx-auto max-w-6xl px-6 pb-14 text-center"
+      >
+        <h2 id="tech-stack-title" className="font-serif mt-6 text-2xl font-bold text-darkpurple">
+          Tech Stack
+        </h2>
+
+        <dl className="mx-auto mt-3 inline-block max-w-3xl text-left text-slate-800 leading-relaxed">
+          <div className="mt-2">
+            <dt className="font-semibold font-serif">Languages &amp; Frameworks</dt>
+            <dd>JavaScript, React, Node.js, PHP, WordPress, MODX, MySQL, PostgreSQL</dd>
+          </div>
+          <div className="mt-2">
+            <dt className="font-semibold font-serif">Frontend</dt>
+            <dd>Tailwind, Bootstrap, Material UI, Formik, Yup, HTML5, CSS3</dd>
+          </div>
+          <div className="mt-2">
+            <dt className="font-semibold font-serif">Dev &amp; Ops</dt>
+            <dd>Git, GitHub, Netlify, Heroku, REST APIs, Postman</dd>
+          </div>
+          <div className="mt-2">
+            <dt className="font-semibold font-serif">Design</dt>
+            <dd>Figma, UX Writing, WCAG, SEO, Analytics</dd>
+          </div>
+          <div className="mt-2">
+            <dt className="font-semibold font-serif" >Workflow</dt>
+            <dd>GoHighLevel, Jira, ChatGPT, Agile/Scrum</dd>
+          </div>
+        </dl>
+      </section>
     </section>
   );
 };
