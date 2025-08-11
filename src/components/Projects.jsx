@@ -18,15 +18,15 @@ const projects = [
     tech: ['Figma', 'UX Design', 'Accessibility'],
     link: 'https://www.figma.com/design/Ha96R0dYgtZmIt0ya22zkn/PrototypeKiosk?node-id=0-1&m=dev&t=ZrXN5VhMuKGLRU4M-1',
     img:  DmvKiosk,
-    imgAlt: 'Hi-fi kiosk mockup with large buttons and high contrast',
+    imgAlt: 'Hi-fi kiosk mockup with large buttons and high contrast, designed for touch interaction',
   },
   {
-    title: 'Redstick Waggers',
-    description: 'React Native app for a pet service startup with real-time scheduling.',
-    tech: ['React Native', 'Expo', 'Tailwind'],
-    link: 'https://github.com/jbrackin1/RedStickWaggers',
-    img: RedStick,
-    imgAlt: 'Mobile screens from Redstick Waggers scheduling flow',
+     title: 'Redstick Waggers',
+  description: 'Mobile app using Baton Rouge Open Data to help dog owners find BREC dog parks, events, and amenities. SQL Saturday Hackathon winner.',
+  tech: ['React Native', 'Expo', 'Firebase'],
+  link: 'https://github.com/jbrackin1/RedStickWaggers',
+  img: RedStick,
+  imgAlt: 'Mobile screens from Redstick Waggers park locator and amenities app',
   },
 ];
 
