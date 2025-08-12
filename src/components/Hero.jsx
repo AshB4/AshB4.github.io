@@ -40,7 +40,7 @@ const Hero = () => {
                 href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/preview"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-md bg-lavender px-6 py-3 font-semibold text-white shadow hover:bg-purple-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender"
+                className="inline-flex items-center justify-center rounded-md bg-indigo-700 px-6 py-3 font-semibold text-white shadow hover:bg-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender"
               >
                 View Resume
                 <span className="sr-only"> (opens in a new tab)</span>

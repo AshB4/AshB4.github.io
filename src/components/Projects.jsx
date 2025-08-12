@@ -6,7 +6,7 @@ import RedStick from "../assets/RedStick.jpeg";
 const projects = [
   {
     title: 'Senior Healthcare App',
-    description: 'React-based platform for insurance comparison with UX for older users.',
+    description: 'React-based platform for insurance comparison with a senior-friendly UX, readable typography, and high-contrast themes.',
     tech: ['React', 'Tailwind', 'API Integration'],
     link: 'https://seniorhealthcaresolution.net',
     img: 'https://seniorhealthcaresolution.net/static/media/DarkLogoSHS.74ceaea6a9e49d502fe0.webp',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: 'DMV Kiosk Redesign',
-    description: 'Accessible touchscreen interface for Louisiana DMV terminals.',
+    description: 'Accessible touchscreen interface for Louisiana DMV terminals, featuring large buttons, clear layouts, and ADA-compliant color contrast.',
     tech: ['Figma', 'UX Design', 'Accessibility'],
     link: 'https://www.figma.com/design/Ha96R0dYgtZmIt0ya22zkn/PrototypeKiosk?node-id=0-1&m=dev&t=ZrXN5VhMuKGLRU4M-1',
     img:  DmvKiosk,
@@ -22,7 +22,7 @@ const projects = [
   },
   {
      title: 'Redstick Waggers',
-  description: 'Mobile app using Baton Rouge Open Data to help dog owners find BREC dog parks, events, and amenities. SQL Saturday Hackathon winner.',
+  description: 'Mobile app using Baton Rouge Open Data to locate BREC dog parks, events, and amenities, built for SQL Saturday Hackathon victory.',
   tech: ['React Native', 'Expo', 'Firebase'],
   link: 'https://github.com/jbrackin1/RedStickWaggers',
   img: RedStick,

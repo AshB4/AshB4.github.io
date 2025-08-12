@@ -7,7 +7,7 @@ const Resume = () => {
       className="py-20 px-6 bg-white text-gray-900"
     >
       {/* Heading is the programmatic label for the section */}
-      <h2 id="resume-heading" className="text-4xl font-serif font-bold mb-6 text-gray-900 text-center">
+      <h2 id="resume-heading" className="text-4xl font-serif font-bold mb-6 text-darkpurple text-center">
         Resume
       </h2>
 
