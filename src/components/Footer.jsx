@@ -28,7 +28,7 @@ const Footer = () => {
                            focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
                            hover:decoration-2 hover:font-bold font-underline"
               >
-                Email Ashley
+                Email
               </a>
             </li>
 

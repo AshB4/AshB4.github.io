@@ -48,7 +48,7 @@ const Hero = () => {
 
               <a
                 href="mailto:Fleurdeviefarmsllc@gmail.com"
-                className="inline-flex items-center justify-center rounded-md border-2 border-emerald-500 px-6 py-3 font-semibold text-emerald-700 hover:bg-emerald-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+                className="inline-flex items-center justify-center rounded-md border-2 border-indigo-500 px-6 py-3 font-semibold text-indigo-900 hover:bg-ingigo-900n focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-900"
                 aria-label="Email Ashley Broussard"
               >
                 Contact
