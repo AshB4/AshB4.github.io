@@ -16,15 +16,13 @@ const Resume = () => {
       </p>
 
       {/* Use a <ul> for lists and keep language concrete and scannable */}
-      <ul className="text-left max-w-xl mx-auto list-disc pl-6 mb-8 text-gray-800">
-        <li>
-          Built an insurance comparison platform with readable typography, high-contrast themes, and simple filters for fixed‑income users
-          <span className="sr-only"> — external site</span> (SeniorHealthcareSolution.net)
-        </li>
-        <li>Won SQL Saturday Hackathon with a full‑stack civic app focused on clarity and performance</li>
-        <li>Maintained 50+ client websites and improved uptime and navigation consistency (WordPress and MODX)</li>
-        <li>Launched a GitHub commit automation tool and documented safe usage for new developers</li>
-      </ul>
+     <ul className="text-left max-w-xl mx-auto list-disc pl-6 mb-8 text-gray-800">
+  <li>Improved client funnels and site performance at Service Hawk, managing 50+ WordPress and MODX sites and delivering a 15% sales lift for one customer</li>
+  <li>Developed a custom mass-email platform at Dealership Toolkit that scaled to 1M+ sends per month with secure error handling</li>
+  <li>Engineered a scheduling interface at Sparq with React and AWS integration, including secure authentication and role-based permissions</li>
+  <li>Contributed UI/UX upgrades at Envoc, delivering enterprise React web apps with ADA-friendly features under tight deadlines</li>
+</ul>
+
 
       {/* Button-styled link with: high contrast, visible focus, and new‑tab notice for screen readers */}
       <p className="text-center">

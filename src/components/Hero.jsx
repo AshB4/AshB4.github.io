@@ -13,7 +13,7 @@ const Hero = () => {
 >
   <CanvasHexFrame /> 
   <div className="mx-auto max-w-5xl px-6 pt-20 pb-12 relative z-10">
-    <div className="rounded-2xl bg-white/ backdrop-blur-md p-6 md:p-8 shadow-xl ring-1 ring-black/5 grid items-center gap-10 md:grid-cols-12">
+    <div className="rounded-2xl bg-white/70 backdrop-blur-md p-6 md:p-8 shadow-xl ring-1 ring-black/5 grid items-center gap-10 md:grid-cols-12">
             {/* Image */}
             <div className="md:col-span-5">
               <img
@@ -40,7 +40,7 @@ const Hero = () => {
               </p>
 
               <p className="mt-3 font-semibold text-accent">
-                Open to local, remote or hybrid roles where I can ship quickly and solve real problems.
+                Open to local, remote, or hybrid roles building accessible, user-first apps that make complex systems clear and useful.
               </p>
 
               {/* CTAs */}
@@ -81,15 +81,15 @@ const Hero = () => {
         <dl className="mx-auto mt-3 inline-block max-w-3xl text-left text-slate-800 leading-relaxed">
           <div className="mt-2">
             <dt className="font-semibold font-serif">Languages &amp; Frameworks</dt>
-            <dd>JavaScript, React, Node.js, PHP, WordPress, MODX, MySQL, PostgreSQL</dd>
+            <dd>JavaScript (ES6+), TypeScript, React, Node.js, PHP, WordPress, MODX, MySQL, PostgreSQL</dd>
           </div>
           <div className="mt-2">
             <dt className="font-semibold font-serif">Frontend</dt>
-            <dd>Tailwind, Bootstrap, Material UI, Formik, Yup, HTML5, CSS3</dd>
+            <dd>Tailwind CSS, Bootstrap, Material UI, Formik, Yup, HTML5, CSS3</dd>
           </div>
           <div className="mt-2">
             <dt className="font-semibold font-serif">Dev &amp; Ops</dt>
-            <dd>Git, GitHub, Netlify, Heroku, REST APIs, Postman</dd>
+            <dd>Git, GitHub, AWS (EC2, S3, Lambda), Netlify, Heroku, REST APIs, Postman</dd>
           </div>
           <div className="mt-2">
             <dt className="font-semibold font-serif">Design</dt>
@@ -97,7 +97,7 @@ const Hero = () => {
           </div>
           <div className="mt-2">
             <dt className="font-semibold font-serif">Workflow</dt>
-            <dd>GoHighLevel, Jira, ChatGPT, Agile/Scrum</dd>
+            <dd>Jira, ChatGPT, Agile/Scrum</dd>
           </div>
         </dl>
       </section>

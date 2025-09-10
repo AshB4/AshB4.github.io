@@ -57,8 +57,10 @@ const GumroadProducts = () => {
         id="products-heading"
         className="text-4xl font-serif font-bold mb-6 text-darkpurple"
       >
-        Products
-      </h2>
+      Creative Side Projects</h2>
+
+      <p className="text-lg max-w-2xl mx-auto mb-12">
+Alongside dev work, I’ve shipped published products on Amazon and Gumroad from spooky-cute coloring books to AI-powered productivity kits. These projects let me explore design, automation, and user experience outside of client work.</p>
 
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {products.map((product, index) => (

@@ -6,7 +6,7 @@ import RedStick from "../assets/RedStick.jpeg";
 const projects = [
   {
     title: 'Senior Healthcare App',
-    description: 'React-based platform for insurance comparison with a senior-friendly UX, readable typography, and high-contrast themes.',
+    description: 'Built in React/Node.js. Normalized a messy 70-field API into a clean, senior-friendly plan comparison tool with high-contrast design, readable typography, and simple filters for accessibility.',
     tech: ['React', 'Tailwind', 'API Integration'],
     link: 'https://seniorhealthcaresolution.net',
     img: 'https://seniorhealthcaresolution.net/static/media/DarkLogoSHS.74ceaea6a9e49d502fe0.webp',
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: 'DMV Kiosk Redesign',
-    description: 'Accessible touchscreen interface for Louisiana DMV terminals, featuring large buttons, clear layouts, and ADA-compliant color contrast.',
+    description: 'At Envoc, rebuilt a Louisiana DMV touchscreen kiosk UI in just 8 hours before a demo. Delivered ADA-compliant large buttons, clear layouts, and high-contrast flows that state officials praised during testing.',
     tech: ['Figma', 'UX Design', 'Accessibility'],
     link: 'https://www.figma.com/design/Ha96R0dYgtZmIt0ya22zkn/PrototypeKiosk?node-id=0-1&m=dev&t=ZrXN5VhMuKGLRU4M-1',
     img:  DmvKiosk,
@@ -22,7 +22,7 @@ const projects = [
   },
   {
      title: 'Redstick Waggers',
-  description: 'Mobile app using Baton Rouge Open Data to locate BREC dog parks, events, and amenities, built for SQL Saturday Hackathon victory.',
+  description: 'Hackathon-winning React Native app that mapped Baton Rouge dog parks and amenities using Open Data BR. Built in two days with Firebase backend, Expo integration, and delivered a smooth live demo.',
   tech: ['React Native', 'Expo', 'Firebase'],
   link: 'https://github.com/jbrackin1/RedStickWaggers',
   img: RedStick,
