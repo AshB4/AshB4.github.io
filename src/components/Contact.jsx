@@ -48,7 +48,7 @@ const Contact = () => {
               className="text-slate-700 underline underline-offset-4
                decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline
                 focus-visible:outline-2 focus-visible:outline-offset-2
-                 focus-visible:outline-emerald-600 rounded-sm"
+                 focus-visible:outline-navy rounded-sm"
               aria-label="Open Ashley Broussard’s GitHub (opens in a new tab)"
             >
               GitHub

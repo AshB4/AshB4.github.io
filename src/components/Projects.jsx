@@ -83,7 +83,7 @@ const Projects = () => {
                 >
                   {project.tech.map((tag, i) => (
                     <li key={i} className="list-none">
-                      <span className="text-xs bg-emerald-700 text-white px-2 py-1 rounded-full font-sans">
+                      <span className="text-xs bg-navy text-white px-2 py-1 rounded-full font-sans">
                         {tag}
                       </span>
                     </li>
@@ -95,7 +95,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`View ${project.title} (opens in a new tab)`}
-                  className="text-emerald-700 underline underline-offset-4 decoration-emerald-700 hover:decoration-2 hover:font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 rounded-sm font-medium text-sm"
+                  className="text-navy underline underline-offset-4 decoration-darkgray hover:decoration-2 hover:font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy rounded-sm font-medium text-sm"
                 >
                   View project
                   <span className="sr-only"> (opens in a new tab)</span>
