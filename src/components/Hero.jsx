@@ -1,5 +1,6 @@
 import Ash from '../assets/ColorPopAsh.webp';
 
+
 const Hero = () => {
   return (
     <section id="hero" aria-labelledby="hero-title" className="bg-cream">
@@ -26,8 +27,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-5 text-lg text-slate-800">
-              Full-stack developer and UX strategist turning wild ideas into working tools
-              from senior-friendly insurance apps to engaging AI bots. Fast, accessible, and purpose-driven.
+              Frontend & Full-Stack Developer specializing in React, Node.js, and accessible UX. Built HIPAA-compliant healthcare platforms and civic hackathon winners that solve real problems.
             </p>
 
             <p className="mt-3 font-semibold text-accent">
