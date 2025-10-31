@@ -4,37 +4,42 @@ const Resume = () => {
     <section
       id="resume"
       aria-labelledby="resume-heading"
-      className="py-20 px-6 bg-white text-gray-900"
+      className="py-16 sm:py-20 px-4 sm:px-6 bg-white text-gray-900"
     >
-      {/* Heading is the programmatic label for the section */}
-      <h2 id="resume-heading" className="text-4xl font-serif font-bold mb-6 text-darkpurple text-center">
+      <h2 id="resume-heading" className="text-3xl sm:text-4xl font-serif font-bold mb-6 text-darkpurple text-center">
         Resume
       </h2>
 
-      <p className="text-lg max-w-2xl mx-auto mb-6 text-center">
-        Full‑stack developer with a UX focus, automation mindset, and a track record of launching useful tools and accessible sites.
+      <p className="text-base sm:text-lg max-w-2xl mx-auto mb-6 text-center leading-relaxed">
+        Frontend-focused full-stack developer with 5+ years of freelance and agency experience. I build accessible, scalable web apps using React, Node.js, and WordPress — with a track record of delivering real outcomes across healthcare, SaaS, and civic tech.
       </p>
 
-      {/* Use a <ul> for lists and keep language concrete and scannable */}
-      <ul className="text-left max-w-xl mx-auto list-disc pl-6 mb-8 text-gray-800">
+      <ul className="text-left max-w-xl mx-auto list-disc pl-6 mb-8 text-gray-800 space-y-3">
         <li>
-          Built an insurance comparison platform with readable typography, high-contrast themes, and simple filters for fixed‑income users
-          <span className="sr-only"> — external site</span> (SeniorHealthcareSolution.net)
+          Built a HIPAA-ready Medicare plan comparison tool used by seniors and caregivers (React, AWS, WCAG 2.1)
         </li>
-        <li>Won SQL Saturday Hackathon with a full‑stack civic app focused on clarity and performance</li>
-        <li>Maintained 50+ client websites and improved uptime and navigation consistency (WordPress and MODX)</li>
-        <li>Launched a GitHub commit automation tool and documented safe usage for new developers</li>
+        <li>
+          Delivered SBIR-ready MVPs for health tech startups — including trauma-informed journaling tools and RBAC dashboards
+        </li>
+        <li>
+          Managed 50+ WordPress and MODX client sites, resolving SEO issues and improving funnel conversion by 15%
+        </li>
+        <li>
+          Shipped UI/UX upgrades to enterprise React apps in .NET environments and participated in agile team sprints
+        </li>
+        <li>
+          Contributed to AI/LLM model optimization and prompt refinement for a generative language model firm
+        </li>
       </ul>
 
-      {/* Button-styled link with: high contrast, visible focus, and new‑tab notice for screen readers */}
       <p className="text-center">
         <a
-          href="https://docs.google.com/document/d/19HFN6pRnTZDTc1Jwqptp28mheV37MvwMedhZZhBu-ZA/edit?usp=sharing"
+          href="https://drive.google.com/drive/u/0/folders/13erfq0f3DiUAtMV1rRm8lSq1GIOrQ8Nx"
           className="inline-block bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-400 hover:bg-indigo-800 transition"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View full resume <span className="sr-only">(opens in a new tab)</span>
+          View Full Resume <span className="sr-only">(opens in a new tab)</span>
         </a>
       </p>
     </section>

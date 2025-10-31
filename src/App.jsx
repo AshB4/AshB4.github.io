@@ -13,8 +13,6 @@ function App() {
   return (
     <main className="bg-cream min-h-screen text-gray-900 font-sans">
       <Hero />
-      
-      {/* wip <ParallaxBanner /> */}
       <Projects />
       <Resume />
       <GumroadProducts />

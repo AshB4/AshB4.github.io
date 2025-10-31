@@ -50,17 +50,17 @@ const GumroadProducts = () => {
   return (
     <section
       id="products"
-      className="py-20 px-6 bg-cream text-gray-900 text-center"
+      className="py-16 sm:py-20 px-4 sm:px-6 bg-cream text-gray-900 text-center"
       aria-labelledby="products-heading"
     >
       <h2
         id="products-heading"
-        className="text-4xl font-serif font-bold mb-6 text-darkpurple"
+        className="text-3xl sm:text-4xl font-serif font-bold mb-6 text-darkpurple"
       >
         Products
       </h2>
 
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {products.map((product, index) => (
           <article
             key={index}

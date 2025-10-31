@@ -1,3 +1,4 @@
+
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -20,21 +21,9 @@ const Footer = () => {
         <nav aria-label="Footer" className="mt-4">
           <h2 className="sr-only">Footer navigation</h2>
           <ul className="flex flex-wrap justify-center gap-3 sm:gap-6">
-            <li>
+              <li>
               <a
-                href="mailto:Fleurdeviefarmsllc@gmail.com"
-                className="underline decoration-2 underline-offset-2 rounded px-3 py-2
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
-                           focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
-                           hover:decoration-2 hover:font-bold font-underline"
-              >
-                Email
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://linkedin.com/in/ashley-m-broussard-33a392253"
+                href="https://codepen.io/AshB4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline decoration-2 underline-offset-2 rounded px-3 py-2
@@ -42,23 +31,13 @@ const Footer = () => {
                            focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
                            hover:decoration-2 hover:font-bold font-underline"
               >
-                LinkedIn <span className="sr-only">(opens in a new tab)</span>
+                Codepen <span className="sr-only">(opens in a new tab)</span>
               </a>
             </li>
+        
 
-            <li>
-              <a
-                href="https://github.com/AshB4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline decoration-2 underline-offset-2 rounded px-3 py-2
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
-                           focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
-                           hover:decoration-2 hover:font-bold font-underline"
-              >
-                GitHub <span className="sr-only">(opens in a new tab)</span>
-              </a>
-            </li>
+ 
+
 
             <li>
               <a
