@@ -1,4 +1,6 @@
 
+import AbLogo from "../assets/AbLogo.png";
+
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -17,6 +19,15 @@ const Footer = () => {
             &copy; <time dateTime={String(year)}>{year}</time> Ashley Broussard
           </span>
         </p>
+
+        <div className="mt-6 flex justify-center">
+          <img
+            src={AbLogo}
+            alt="Ashley Broussard logo"
+            className="h-12 w-auto opacity-30"
+            loading="lazy"
+          />
+        </div>
 
         <nav aria-label="Footer" className="mt-4">
           <h2 className="sr-only">Footer navigation</h2>

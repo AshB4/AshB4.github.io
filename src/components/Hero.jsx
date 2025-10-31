@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import Ash from '../assets/ColorPopAsh.webp';
+import AbLogo from '../assets/AbLogo.png';
 import CanvasHexFrame from './HexFrames';
 
 const Hero = () => {
@@ -77,7 +78,13 @@ const Hero = () => {
         aria-labelledby="tech-stack-title"
         className="mx-auto max-w-6xl px-4 sm:px-6 pb-14 text-center relative z-10"
       >
-        <div className="rounded-2xl bg-white/75 backdrop-blur-md p-5 sm:p-6 md:p-8 shadow-xl ring-1 ring-black/5 max-w-md sm:max-w-3xl lg:max-w-5xl mx-auto">
+        <div className="relative rounded-2xl bg-white/75 backdrop-blur-md p-5 sm:p-6 md:p-8 shadow-xl ring-1 ring-black/5 max-w-md sm:max-w-3xl lg:max-w-5xl mx-auto">
+          <img
+            src={AbLogo}
+            alt="Ashley Broussard monogram"
+            className="absolute top-4 right-4 w-14 sm:w-14 opacity-25"
+            loading="lazy"
+          />
           <h2 id="tech-stack-title" className="font-serif text-2xl font-bold text-darkpurple">
             Tech Stack
           </h2>
