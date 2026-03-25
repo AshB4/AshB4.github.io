@@ -57,9 +57,10 @@ function Links() {
       <Contact
         title="Let's Connect"
         description="I build things people end up using. If you want to collaborate, have an idea, or just found something interesting, reach out or explore more below."
+        showLiveProject={false}
       />
 
-      <Footer />
+      <Footer showSocialLinks={false} />
       <BackToTop />
     </main>
   )

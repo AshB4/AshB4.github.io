@@ -189,6 +189,64 @@ function GumroadProducts() {
           Some links may be affiliate links, which means I may earn a small commission at no extra cost to you.
         </p>
       </section>
+
+      <section className="mt-12 rounded-2xl bg-cream py-10 px-4 sm:px-6">
+        <h2 className="text-2xl font-serif font-bold text-darkpurple text-center">
+          Follow along
+        </h2>
+
+        <p className="text-sm text-slate-600 text-center mt-4">
+          Where I share new creations, experiments, and things I’m working on.
+        </p>
+
+        <ul className="flex flex-wrap justify-center gap-6 mt-6 text-base font-medium">
+          <li>
+            <a
+              href="https://www.pinterest.com/ColorWithAshB/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+            >
+              Pinterest (ideas + visuals)
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.facebook.com/ColorWithAshB/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+            >
+              Facebook (updates + posts)
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://dev.to/ashb4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+            >
+              Dev.to (what I’m learning)
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.reddit.com/user/HearingSpecialist813/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+              aria-label="Reddit profile for AshB4 Studios"
+            >
+              Reddit (AshB4 Studios)
+            </a>
+          </li>
+
+        </ul>
+      </section>
     </section>
   )
 }

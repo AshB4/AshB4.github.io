@@ -3,6 +3,7 @@ import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
 const Contact = ({
   title = 'Get in Touch',
   description = 'I’m a front-end-focused full stack developer open to full-time, contract, or freelance opportunities. Reach out to discuss accessible, user-first web projects or just say hello.',
+  showLiveProject = true,
 }) => {
   return (
     <section
@@ -42,7 +43,7 @@ const Contact = ({
               aria-label="Open Ashley Broussard’s LinkedIn profile (opens in a new tab)"
             >
               <Linkedin className="h-4 w-4" />
-              LinkedIn (background)
+              LinkedIn (experience)
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </li>
@@ -64,19 +65,21 @@ const Contact = ({
             </a>
           </li>
 
-          <li>
-            <a
-              href="https://truefidelityhealthcareadvisors.net"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 rounded-sm"
-              aria-label="Visit SeniorHealthcareSolution.net project (opens in a new tab)"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Live Project
-              <span className="sr-only"> (opens in a new tab)</span>
-            </a>
-          </li>
+          {showLiveProject ? (
+            <li>
+              <a
+                href="https://truefidelityhealthcareadvisors.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 rounded-sm"
+                aria-label="Visit SeniorHealthcareSolution.net project (opens in a new tab)"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Live Project
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+          ) : null}
         </ul>
       </nav>
     </section>
