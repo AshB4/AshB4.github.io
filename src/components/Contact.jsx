@@ -2,7 +2,7 @@ import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
 
 const Contact = ({
   title = 'Get in Touch',
-  description = 'Reach out to discuss web projects, product ideas, collaborations, or just say hello.',
+  description = 'I’m a front-end-focused full stack developer open to full-time, contract, or freelance opportunities. Reach out to discuss accessible, user-first web projects or just say hello.',
 }) => {
   return (
     <section
