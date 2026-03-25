@@ -1,6 +1,9 @@
 import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
 
-const Contact = () => {
+const Contact = ({
+  title = 'Get in Touch',
+  description = 'Reach out to discuss web projects, product ideas, collaborations, or just say hello.',
+}) => {
   return (
     <section
       id="contact"
@@ -8,13 +11,12 @@ const Contact = () => {
       className="bg-slate-50 text-gray-800 py-16 px-4 sm:px-6 text-center"
     >
       <h2 id="contact-title" className="text-3xl sm:text-4xl font-serif font-bold mb-6 text-darkpurple">
-        Get in Touch
+        {title}
       </h2>
 
-     <p className="text-base sm:text-lg font-sans mb-8 max-w-xl mx-auto leading-relaxed">
-  I’m a front-end–focused full stack developer open to full-time, contract, or freelance opportunities. 
-  Reach out to discuss accessible, user-first web projects or just say hello.
-</p>
+      <p className="text-base sm:text-lg font-sans mb-8 max-w-2xl mx-auto leading-relaxed">
+        {description}
+      </p>
 
 
       {/* Landmark + real list for assistive tech */}
@@ -40,7 +42,7 @@ const Contact = () => {
               aria-label="Open Ashley Broussard’s LinkedIn profile (opens in a new tab)"
             >
               <Linkedin className="h-4 w-4" />
-              LinkedIn
+              LinkedIn (background)
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </li>
@@ -57,7 +59,7 @@ const Contact = () => {
               aria-label="Open Ashley Broussard’s GitHub (opens in a new tab)"
             >
               <Github className="h-4 w-4" />
-              GitHub
+              GitHub (what I build)
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </li>
@@ -71,7 +73,7 @@ const Contact = () => {
               aria-label="Visit SeniorHealthcareSolution.net project (opens in a new tab)"
             >
               <ExternalLink className="h-4 w-4" />
-              TrueFidelityHealthcareAdvisors.com
+              Live Project
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </li>

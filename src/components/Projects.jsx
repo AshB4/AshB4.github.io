@@ -3,31 +3,42 @@ import DmvKiosk from "../assets/DmvKisok.png";
 import RedStick from "../assets/RedStick.jpeg";
 import TFHA from "../assets/SHCS.png";
 
-
 const projects = [
   {
+    title: 'Healthcare Platform (Better Mind Care)',
+    description:
+      'Built a HIPAA-ready healthcare interface using React, focusing on accessible UI patterns and secure data handling. Developed component systems, client-side state management, and WCAG 2.1-compliant workflows. Implemented RBAC and secure API integrations for protected health data in a production environment.',
+    tech: ['React', 'TypeScript', 'AWS', 'RBAC', 'WCAG 2.1'],
+    link: null,
+    img: null,
+    imgAlt: 'Healthcare application interface with accessible design patterns',
+  },
+  {
     title: 'True Fidelity Healthcare Advisors',
-    description: 'React-based platform for insurance comparison with a senior-friendly UX, readable typography, and high-contrast themes.',
-    tech: ['React', 'Tailwind', 'API Integration'],
+    description:
+      'Built and shipped a Medicare plan comparison platform using React, Node.js, and AWS. Integrated a complex insurance API for real-time plan data and implemented RBAC with secure data handling. Designed a senior-friendly UI with WCAG-compliant accessibility.',
+    tech: ['React', 'Node.js', 'AWS', 'RBAC', 'WCAG 2.1'],
     link: 'https://www.truefidelityhealthcareadvisors.com',
     img: TFHA,
-    imgAlt: 'Senior Health Care Logo',
+    imgAlt: 'Healthcare platform interface for Medicare plan comparison with accessible UI',
   },
   {
     title: 'DMV Kiosk Redesign',
-    description: 'Accessible touchscreen interface for Louisiana DMV terminals, featuring large buttons, clear layouts, and ADA-compliant color contrast.',
-    tech: ['Figma', 'UX Design', 'Accessibility'],
+    description:
+      'Designed an ADA-compliant touchscreen kiosk interface for high-volume DMV environments. Focused on large touch targets, simplified navigation, and high-contrast layouts to reduce user error and cognitive load.',
+    tech: ['Figma', 'UX Design', 'Accessibility', 'ADA'],
     link: 'https://www.figma.com/design/Ha96R0dYgtZmIt0ya22zkn/PrototypeKiosk?node-id=0-1&m=dev&t=ZrXN5VhMuKGLRU4M-1',
-    img:  DmvKiosk,
-    imgAlt: 'Hi-fi kiosk mockup with large buttons and high contrast, designed for touch interaction',
+    img: DmvKiosk,
+    imgAlt: 'Accessible DMV kiosk interface with large buttons and high contrast',
   },
   {
-     title: 'Redstick Waggers',
-  description: 'Mobile app using Baton Rouge Open Data to locate BREC dog parks, events, and amenities, built for SQL Saturday Hackathon victory.',
-  tech: ['React Native', 'Expo', 'Firebase'],
-  link: 'https://github.com/jbrackin1/RedStickWaggers',
-  img: RedStick,
-  imgAlt: 'Mobile screens from Redstick Waggers park locator and amenities app',
+    title: 'Redstick Waggers',
+    description:
+      'Built a cross-platform mobile app using React Native and Firebase to surface Baton Rouge Open Data. Integrated real-time data and geolocation features. Awarded 1st place at SQL Saturday hackathon.',
+    tech: ['React Native', 'Firebase', 'Expo', 'Open Data API'],
+    link: 'https://github.com/jbrackin1/RedStickWaggers',
+    img: RedStick,
+    imgAlt: 'Mobile app showing dog park locations and amenities with map-based UI',
   },
 ];
 
@@ -38,22 +49,22 @@ const Projects = () => {
       aria-labelledby="projects-heading"
       className="max-w-screen-lg mx-auto py-16 sm:py-20 px-4 sm:px-6"
     >
-      <h2 id="projects-heading" className="text-3xl sm:text-4xl font-serif font-bold text-center mb-10 sm:mb-12 text-darkpurple">
+      <h2
+        id="projects-heading"
+        className="text-3xl sm:text-4xl font-serif font-bold text-center mb-10 sm:mb-12 text-darkpurple"
+      >
         Featured Projects
       </h2>
 
-      <ul role="list" className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => {
           const cardId = `project-${index}`;
-          const descId = `${cardId}-desc`;
-          const techId = `${cardId}-tech`;
+
           return (
             <li key={cardId} className="list-none">
-              <article
-                aria-labelledby={`${cardId}-title`}
-                aria-describedby={`${descId} ${techId}`}
-                className="relative overflow-hidden bg-white rounded-lg shadow-lg p-6 hover:shadow-xl focus-within:shadow-xl transition duration-300"
-              >
+              <article className="relative overflow-hidden bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+
+                {/* Decorative blobs */}
                 <span
                   aria-hidden="true"
                   className="pointer-events-none absolute -top-11 -left-8 h-28 w-28 bg-gradient-to-br from-indigo-400/60 to-emerald-300/50 blur-[1px]"
@@ -64,55 +75,62 @@ const Projects = () => {
                   className="pointer-events-none absolute -bottom-12 -right-10 h-32 w-32 bg-gradient-to-br from-emerald-300/50 to-indigo-400/40 blur-[1px]"
                   style={{ clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' }}
                 />
+
                 <div className="relative z-10 space-y-4">
-                  {/* Image at the top (508-friendly) */}
+
+                  {/* IMAGE (safe handling) */}
                   <figure className="mb-4">
-                    <div className="aspect-[16/9] w-full overflow-hidden rounded-md bg-slate-100">
-                      <img
-                        src={project.img}
-                        alt={project.imgAlt}
-                        width="640"
-                        height="360"
-                        loading="lazy"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <figcaption className="sr-only">{project.title} preview</figcaption>
+                    {project.img ? (
+                      <div className="aspect-[16/9] w-full overflow-hidden rounded-md bg-slate-100">
+                        <img
+                          src={project.img}
+                          alt={project.imgAlt}
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-[16/9] w-full flex items-center justify-center rounded-md bg-slate-100 text-sm text-gray-500">
+                        Private healthcare project
+                      </div>
+                    )}
                   </figure>
 
-                  <h3 id={`${cardId}-title`} className="text-xl font-serif font-bold mb-2">
+                  <h3 className="text-xl font-serif font-bold">
                     {project.title}
                   </h3>
 
-                  <p id={descId} className="text-gray-700">
+                  <p className="text-gray-700">
                     {project.description}
                   </p>
 
-                  <ul
-                    id={techId}
-                    aria-label="Technologies used"
-                    className="flex flex-wrap gap-2 mb-4"
-                  >
+                  {/* TECH TAGS */}
+                  <ul className="flex flex-wrap gap-2">
                     {project.tech.map((tag, i) => (
-                      <li key={i} className="list-none">
-                        <span className="text-xs bg-emerald-700 text-white px-2 py-1 rounded-full font-sans">
+                      <li key={i}>
+                        <span className="text-xs bg-emerald-700 text-white px-2 py-1 rounded-full">
                           {tag}
                         </span>
                       </li>
                     ))}
                   </ul>
 
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`View ${project.title} (opens in a new tab)`}
-                    className="text-emerald-700 underline underline-offset-4 decoration-emerald-700 hover:decoration-2 hover:font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 rounded-sm font-medium text-sm"
-                  >
-                    View project
-                    <span className="sr-only"> (opens in a new tab)</span>
-                    <span aria-hidden="true"> →</span>
-                  </a>
+                  {/* LINK / NDA */}
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-700 underline underline-offset-4 hover:font-semibold text-sm"
+                    >
+                      View project →
+                    </a>
+                  ) : (
+                    <span className="text-sm text-gray-500 italic">
+                      Private healthcare project (HIPAA-compliant) - details available upon request
+                    </span>
+                  )}
+
                 </div>
               </article>
             </li>
