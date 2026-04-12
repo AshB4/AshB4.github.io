@@ -14,7 +14,7 @@ const Hero = () => {
         id="hero"
         aria-labelledby="hero-title"
         ref={heroSectionRef}
-        className="relative isolate min-h-screen overflow-hidden"
+        className="relative isolate overflow-hidden"
       >
         <CanvasHexFrame containerRef={heroSectionRef} />
 
