@@ -30,7 +30,7 @@ const Hero = () => {
             titleId="hero-title"
             paragraphs={[
               'Frontend-focused engineer building accessible, data-driven applications across healthcare, civic tech, and SaaS.',
-              'I focus on turning complex systems into usable interfaces—whether that’s secure healthcare workflows, automation pipelines, or tools real people rely on every day.'
+              'I focus on turning complex systems into usable interfaces, whether that is secure healthcare workflows, automation pipelines, or tools real people rely on every day.'
             ]}
           >
               <div className="mt-5 grid gap-2 text-sm sm:text-base text-left max-w-2xl mx-auto md:mx-0 text-slate-800">
