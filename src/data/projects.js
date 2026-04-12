@@ -104,6 +104,7 @@ export const projects = [
       'Helps users evaluate plans based on coverage, cost, and medication needs instead of guesswork.',
     tech: ['React', 'React Router', 'Styled Components', 'FastAPI', 'MySQL', 'Chart.js', 'Healthcare.gov APIs'],
     link: 'https://www.truefidelityhealthcareadvisors.com',
+    linkLabel: 'View Live Demo',
     img: TFHA,
     imgAlt: 'Healthcare platform interface for Medicare plan comparison with accessible UI',
     details: {
