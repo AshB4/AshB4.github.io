@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import Ash from '../assets/ColorPopAsh.webp';
 import AbLogo from '../assets/AbLogo.png';
+import { RESUME_URL } from '../lib/resumeLink';
 import CanvasHexFrame from './HexFrames';
 import ProfileHeroCard from './ProfileHeroCard';
 
@@ -13,7 +14,7 @@ const Hero = () => {
         id="hero"
         aria-labelledby="hero-title"
         ref={heroSectionRef}
-        className="relative isolate overflow-hidden"
+        className="relative isolate min-h-screen overflow-hidden"
       >
         <CanvasHexFrame containerRef={heroSectionRef} />
 
@@ -28,8 +29,8 @@ const Hero = () => {
             )}
             titleId="hero-title"
             paragraphs={[
-              'Frontend Engineer building accessible, secure web applications with React, TypeScript, Node.js, and AWS.',
-              'I’ve shipped healthcare, civic tech, and client-facing products with a focus on WCAG-compliant UI, performance, and real-world usability.'
+              'Frontend-focused engineer building accessible, data-driven applications across healthcare, civic tech, and SaaS.',
+              'I focus on turning complex systems into usable interfaces—whether that’s secure healthcare workflows, automation pipelines, or tools real people rely on every day.'
             ]}
           >
               <div className="mt-5 grid gap-2 text-sm sm:text-base text-left max-w-2xl mx-auto md:mx-0 text-slate-800">
@@ -46,8 +47,9 @@ const Hero = () => {
               {/* CTAs */}
               <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
-                  href="/Ashley_Broussard_Frontend_Engineer_Resume.pdf"
-                  download
+                  href={RESUME_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-md bg-indigo-700 px-6 py-3 font-semibold text-white shadow hover:bg-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender"
                 >
                   Download Resume

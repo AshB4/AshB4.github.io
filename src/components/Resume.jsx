@@ -1,4 +1,6 @@
 // src/components/Resume.jsx
+import { RESUME_URL } from '../lib/resumeLink';
+
 const Resume = () => {
   return (
     <section
@@ -43,8 +45,9 @@ const Resume = () => {
       {/* CTA */}
       <div className="text-center">
         <a
-          href="https://docs.google.com/document/d/14MULxFNy7EDJX1LLQ6cFkwnjUc_bN0NJ2UD10cgM15I/edit?usp=sharing"
-        
+          href={RESUME_URL}
+          target="_blank"
+          rel="noreferrer"
           className="inline-block bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-400 transition"
         >
           Download Resume
