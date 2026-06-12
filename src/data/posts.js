@@ -6,7 +6,7 @@ export const posts = [
     excerpt:
       "A short source post used to verify that DEV Community can read the AshB4 RSS feed without importing existing DEV articles.",
     tags: ["rss", "devto", "publishing", "developer-notes"],
-    canonicalUrl: "https://ashb4.github.io/blog/testing-rss-import-from-ashb4",
+    canonicalUrl: "https://ashb4.github.io/blog/testing-rss-import-from-ashb4/",
     includeInFeed: true,
     content:
       "<p>This is a short source post used to test RSS import from the AshB4 portfolio site.</p><p>The goal is to confirm that DEV Community can read <code>https://ashb4.github.io/feed.xml</code>, see a non-DEV canonical URL, and import the post without duplicating existing DEV articles.</p><p>If this import works, future original posts can be added to the same centralized post metadata file and published through the generated RSS feed.</p>",
