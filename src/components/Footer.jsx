@@ -29,40 +29,54 @@ const Footer = ({ showSocialLinks = true }) => {
           />
         </div>
 
-        {showSocialLinks ? (
-          <nav aria-label="Footer" className="mt-4">
-            <h2 className="sr-only">Footer navigation</h2>
-            <ul className="flex flex-wrap justify-center gap-3 sm:gap-6">
-              <li>
-                <a
-                  href="https://codepen.io/AshB4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-2 underline-offset-2 rounded px-3 py-2
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
-                           focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
-                           hover:decoration-2 hover:font-bold font-underline"
-                >
-                  Codepen <span className="sr-only">(opens in a new tab)</span>
-                </a>
-              </li>
+        <nav aria-label="Footer" className="mt-4">
+          <h2 className="sr-only">Footer navigation</h2>
+          <ul className="flex flex-wrap justify-center gap-3 sm:gap-6">
+            {showSocialLinks ? (
+              <>
+                <li>
+                  <a
+                    href="https://codepen.io/AshB4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-2 underline-offset-2 rounded px-3 py-2
+                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
+                             focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
+                             hover:decoration-2 hover:font-bold font-underline"
+                  >
+                    Codepen <span className="sr-only">(opens in a new tab)</span>
+                  </a>
+                </li>
 
-              <li>
-                <a
-                  href="https://fleurdevie.gumroad.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-2 underline-offset-2 rounded px-3 py-2
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
-                           focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
-                           hover:decoration-2 hover:font-bold font-underline"
-                >
-                  Gumroad <span className="sr-only">(opens in a new tab)</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        ) : null}
+                <li>
+                  <a
+                    href="https://fleurdevie.gumroad.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-2 underline-offset-2 rounded px-3 py-2
+                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
+                             focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
+                             hover:decoration-2 hover:font-bold font-underline"
+                  >
+                    Gumroad <span className="sr-only">(opens in a new tab)</span>
+                  </a>
+                </li>
+              </>
+            ) : null}
+
+            <li>
+              <a
+                href="/blog"
+                className="underline decoration-2 underline-offset-2 rounded px-3 py-2
+                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white
+                         focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900
+                         hover:decoration-2 hover:font-bold font-underline"
+              >
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </footer>
   );
