@@ -7,18 +7,25 @@
     <language>en-us</language>
     <atom:link href="https://ashb4.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Follow Along with AshB4</title>
-      <link>https://ashb4.github.io/blog</link>
-      <guid isPermaLink="true">https://ashb4.github.io/blog</guid>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-      <description>Where I share new creations, experiments, and things I’m working on.</description>
+      <title>I Built a React Playground to Nail My Interviews — Here&apos;s What It Covers</title>
+      <link>https://ashb4.github.io/blog/react-playground-interview-prep</link>
+      <guid isPermaLink="true">https://ashb4.github.io/blog/react-playground-interview-prep</guid>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 GMT</pubDate>
+      <description>A practical breakdown of the React concepts I practiced while preparing for interviews, and what I would add next.</description>
     </item>
     <item>
-      <title>Ashley Broussard Links</title>
-      <link>https://ashb4.github.io/links</link>
-      <guid isPermaLink="true">https://ashb4.github.io/links</guid>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-      <description>Important links and resources from Ashley Broussard.</description>
+      <title>I Was Drowning in Product Chaos — So I Wrote 25 Prompts and Set Fire to My Roadmap</title>
+      <link>https://ashb4.github.io/blog/product-chaos-25-prompts-roadmap</link>
+      <guid isPermaLink="true">https://ashb4.github.io/blog/product-chaos-25-prompts-roadmap</guid>
+      <pubDate>Sat, 17 May 2025 00:00:00 GMT</pubDate>
+      <description>How I used structured prompts to cut through product chaos, rethink my roadmap, and turn scattered ideas into clearer next steps.</description>
+    </item>
+    <item>
+      <title>The Ritual Scheduler</title>
+      <link>https://ashb4.github.io/blog/the-ritual-scheduler</link>
+      <guid isPermaLink="true">https://ashb4.github.io/blog/the-ritual-scheduler</guid>
+      <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
+      <description>A build note about turning consistency, scheduling, and tiny rituals into a system that actually works.</description>
     </item>
   </channel>
 </rss>
