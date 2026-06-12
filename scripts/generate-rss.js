@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { posts } from "../src/data/posts.js";
@@ -13,7 +13,8 @@ const authorName = "Ashley Broussard";
 const authorEmail = "fleurdeviefarmsllc@gmail.com";
 
 const currentDir = dirname(fileURLToPath(import.meta.url));
-const outputPath = join(currentDir, "..", "dist", "feed.xml");
+const distDir = join(currentDir, "..", "dist");
+const outputPath = join(distDir, "feed.xml");
 
 function escapeXml(value) {
   return String(value)
@@ -94,3 +95,16 @@ await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, rss, "utf8");
 
 console.log(`Generated RSS feed at ${outputPath}`);
+
+await Promise.all(
+  feedPosts.map(async (post) => {
+    const url = new URL(post.canonicalUrl);
+    if (url.origin !== siteUrl) return;
+
+    const routeDir = join(distDir, url.pathname.replace(/^\/+/, ""));
+    await mkdir(routeDir, { recursive: true });
+    await copyFile(join(distDir, "index.html"), join(routeDir, "index.html"));
+  })
+);
+
+console.log("Generated static pages for RSS item URLs");
