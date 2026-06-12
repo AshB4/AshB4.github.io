@@ -38,6 +38,14 @@ function BlogPost() {
             {post.excerpt}
           </p>
 
+          {post.coverImageUrl ? (
+            <img
+              src={post.coverImageUrl}
+              alt={post.coverImageAlt || ""}
+              className="mt-8 aspect-video w-full rounded-xl object-cover shadow ring-1 ring-black/5"
+            />
+          ) : null}
+
           <div
             className="mt-8 space-y-5 text-slate-700 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}

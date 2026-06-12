@@ -57,6 +57,15 @@ function Blog() {
                   {post.excerpt}
                 </p>
 
+                {post.coverImageUrl ? (
+                  <img
+                    src={post.coverImageUrl}
+                    alt={post.coverImageAlt || ""}
+                    className="mt-5 aspect-video w-full rounded-xl object-cover shadow ring-1 ring-black/5"
+                    loading="lazy"
+                  />
+                ) : null}
+
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {post.tags.map((tag) => (
                     <li
