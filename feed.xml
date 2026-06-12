@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ashley Broussard | React + Full-Stack Developer</title>
+    <link>https://ashb4.github.io</link>
+    <description>Creative full-stack developer blending React, Tailwind, GPT APIs, and UX design.</description>
+    <language>en-us</language>
+    <atom:link href="https://ashb4.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Follow Along with AshB4</title>
+      <link>https://ashb4.github.io/blog</link>
+      <guid isPermaLink="true">https://ashb4.github.io/blog</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Where I share new creations, experiments, and things I’m working on.</description>
+    </item>
+    <item>
+      <title>Ashley Broussard Links</title>
+      <link>https://ashb4.github.io/links</link>
+      <guid isPermaLink="true">https://ashb4.github.io/links</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Important links and resources from Ashley Broussard.</description>
+    </item>
+  </channel>
+</rss>
