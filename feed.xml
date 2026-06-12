@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ashley Broussard | React + Full-Stack Developer</title>
     <link>https://ashb4.github.io</link>
     <description>Creative full-stack developer blending React, Tailwind, GPT APIs, and UX design.</description>
     <language>en-us</language>
     <atom:link href="https://ashb4.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 12 Jun 2026 03:03:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 03:05:13 GMT</lastBuildDate>
     <item>
       <title>Testing RSS Import from AshB4</title>
-      <link>https://ashb4.github.io/blog/testing-rss-import-from-ashb4</link>
-      <guid isPermaLink="true">https://ashb4.github.io/blog/testing-rss-import-from-ashb4</guid>
+      <link>https://ashb4.github.io/blog/testing-rss-import-from-ashb4/</link>
+      <guid isPermaLink="true">https://ashb4.github.io/blog/testing-rss-import-from-ashb4/</guid>
       <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
       <author>fleurdeviefarmsllc@gmail.com (Ashley Broussard)</author>
-      <dc:creator>Ashley Broussard</dc:creator>
       <description>A short source post used to verify that DEV Community can read the AshB4 RSS feed without importing existing DEV articles.</description>
       <category>rss</category>
       <category>devto</category>
