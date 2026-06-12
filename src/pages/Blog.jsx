@@ -41,13 +41,15 @@ function Blog() {
 
                 <h2 className="mt-2 font-serif text-2xl font-bold text-darkpurple leading-tight">
                   <a
-                    href={post.canonicalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={post.devUrl || `/blog/${post.slug}`}
+                    target={post.devUrl ? "_blank" : undefined}
+                    rel={post.devUrl ? "noopener noreferrer" : undefined}
                     className="underline decoration-transparent underline-offset-4 hover:decoration-darkpurple focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-darkpurple rounded-sm"
                   >
                     {post.title}
-                    <span className="sr-only"> (opens on DEV Community)</span>
+                    {post.devUrl ? (
+                      <span className="sr-only"> (opens on DEV Community)</span>
+                    ) : null}
                   </a>
                 </h2>
 
@@ -68,13 +70,15 @@ function Blog() {
 
                 <p className="mt-5">
                   <a
-                    href={post.canonicalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={post.devUrl || `/blog/${post.slug}`}
+                    target={post.devUrl ? "_blank" : undefined}
+                    rel={post.devUrl ? "noopener noreferrer" : undefined}
                     className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
                   >
-                    Read on DEV
-                    <span className="sr-only"> (opens in a new tab)</span>
+                    {post.devUrl ? "Read on DEV" : "Read Post"}
+                    {post.devUrl ? (
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    ) : null}
                   </a>
                 </p>
               </article>
