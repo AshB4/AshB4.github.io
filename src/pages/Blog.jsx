@@ -42,9 +42,12 @@ function Blog() {
                 <h2 className="mt-2 font-serif text-2xl font-bold text-darkpurple leading-tight">
                   <a
                     href={post.canonicalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="underline decoration-transparent underline-offset-4 hover:decoration-darkpurple focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-darkpurple rounded-sm"
                   >
                     {post.title}
+                    <span className="sr-only"> (opens on DEV Community)</span>
                   </a>
                 </h2>
 
@@ -62,6 +65,18 @@ function Blog() {
                     </li>
                   ))}
                 </ul>
+
+                <p className="mt-5">
+                  <a
+                    href={post.canonicalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+                  >
+                    Read on DEV
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                </p>
               </article>
             ))}
           </div>

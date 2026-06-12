@@ -7,7 +7,7 @@ export const posts = [
       "A practical breakdown of the React concepts I practiced while preparing for interviews, and what I would add next.",
     tags: ["react", "frontend", "interview-prep", "developer-notes"],
     canonicalUrl:
-      "https://ashb4.github.io/blog/react-playground-interview-prep",
+      "https://dev.to/ashb4/i-built-a-react-playground-to-nail-my-interviews-heres-what-it-covers-and-what-youd-add-next-4m68",
   },
   {
     title: "The Ritual Scheduler",
@@ -16,7 +16,7 @@ export const posts = [
     excerpt:
       "A build note about turning consistency, scheduling, and tiny rituals into a system that actually works.",
     tags: ["automation", "scheduling", "side-projects", "developer-notes"],
-    canonicalUrl: "https://ashb4.github.io/blog/the-ritual-scheduler",
+    canonicalUrl: "https://dev.to/ashb4/the-ritual-scheduler-520a",
   },
   {
     title:
@@ -33,6 +33,6 @@ export const posts = [
       "developer-notes",
     ],
     canonicalUrl:
-      "https://ashb4.github.io/blog/product-chaos-25-prompts-roadmap",
+      "https://dev.to/ashb4/i-was-drowning-in-product-chaos-so-i-wrote-25-prompts-and-set-fire-to-my-roadmap-3cee",
   },
 ];
