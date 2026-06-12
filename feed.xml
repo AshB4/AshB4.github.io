@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Ashley Broussard | React + Full-Stack Developer</title>
     <link>https://ashb4.github.io</link>
     <description>Creative full-stack developer blending React, Tailwind, GPT APIs, and UX design.</description>
     <language>en-us</language>
     <atom:link href="https://ashb4.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jun 2026 02:49:04 GMT</lastBuildDate>
     <item>
-      <title>I Built a React Playground to Nail My Interviews — Here&apos;s What It Covers</title>
-      <link>https://dev.to/ashb4/i-built-a-react-playground-to-nail-my-interviews-heres-what-it-covers-and-what-youd-add-next-4m68</link>
-      <guid isPermaLink="true">https://dev.to/ashb4/i-built-a-react-playground-to-nail-my-interviews-heres-what-it-covers-and-what-youd-add-next-4m68</guid>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 GMT</pubDate>
-      <description>A practical breakdown of the React concepts I practiced while preparing for interviews, and what I would add next.</description>
-    </item>
-    <item>
-      <title>I Was Drowning in Product Chaos — So I Wrote 25 Prompts and Set Fire to My Roadmap</title>
-      <link>https://dev.to/ashb4/i-was-drowning-in-product-chaos-so-i-wrote-25-prompts-and-set-fire-to-my-roadmap-3cee</link>
-      <guid isPermaLink="true">https://dev.to/ashb4/i-was-drowning-in-product-chaos-so-i-wrote-25-prompts-and-set-fire-to-my-roadmap-3cee</guid>
-      <pubDate>Sat, 17 May 2025 00:00:00 GMT</pubDate>
-      <description>How I used structured prompts to cut through product chaos, rethink my roadmap, and turn scattered ideas into clearer next steps.</description>
-    </item>
-    <item>
-      <title>The Ritual Scheduler</title>
-      <link>https://dev.to/ashb4/the-ritual-scheduler-520a</link>
-      <guid isPermaLink="true">https://dev.to/ashb4/the-ritual-scheduler-520a</guid>
-      <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
-      <description>A build note about turning consistency, scheduling, and tiny rituals into a system that actually works.</description>
+      <title>Testing RSS Import from AshB4</title>
+      <link>https://ashb4.github.io/blog/testing-rss-import-from-ashb4</link>
+      <guid isPermaLink="true">https://ashb4.github.io/blog/testing-rss-import-from-ashb4</guid>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+      <author>fleurdeviefarmsllc@gmail.com (Ashley Broussard)</author>
+      <dc:creator>Ashley Broussard</dc:creator>
+      <description>A short source post used to verify that DEV Community can read the AshB4 RSS feed without importing existing DEV articles.</description>
+      <category>rss</category>
+      <category>devto</category>
+      <category>publishing</category>
+      <category>developer-notes</category>
+      <content:encoded><![CDATA[<p>This is a short source post used to test RSS import from the AshB4 portfolio site.</p><p>The goal is to confirm that DEV Community can read <code>https://ashb4.github.io/feed.xml</code>, see a non-DEV canonical URL, and import the post without duplicating existing DEV articles.</p><p>If this import works, future original posts can be added to the same centralized post metadata file and published through the generated RSS feed.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>
