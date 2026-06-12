@@ -30,16 +30,18 @@ function rssDate(date) {
   return new Date(`${date}T00:00:00.000Z`).toUTCString();
 }
 
-const items = posts
+const items = [...posts]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   .map((post) => {
-    const url = absoluteUrl(post.url);
+    const url = absoluteUrl(post.canonicalUrl || post.url);
+    const description = post.excerpt || post.description;
 
     return `    <item>
       <title>${escapeXml(post.title)}</title>
       <link>${escapeXml(url)}</link>
       <guid isPermaLink="true">${escapeXml(url)}</guid>
       <pubDate>${rssDate(post.date)}</pubDate>
-      <description>${escapeXml(post.description)}</description>
+      <description>${escapeXml(description)}</description>
     </item>`;
   })
   .join("\n");
