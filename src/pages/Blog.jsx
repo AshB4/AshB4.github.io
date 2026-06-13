@@ -4,9 +4,9 @@ import FollowAlong from "../components/FollowAlong";
 import Footer from "../components/Footer";
 import { posts } from "../data/posts";
 
-const postsByDate = [...posts].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+const postsByDate = posts
+  .filter((post) => post.showInBlog !== false)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 function formatDate(date) {
   return new Intl.DateTimeFormat("en", {

@@ -34,15 +34,11 @@ function BlogPost() {
             {post.title}
           </h1>
 
-          <p className="mt-6 text-lg text-slate-700 leading-relaxed">
-            {post.excerpt}
-          </p>
-
           {post.coverImageUrl ? (
             <img
               src={post.coverImageUrl}
               alt={post.coverImageAlt || ""}
-              className="mt-8 aspect-video w-full rounded-xl object-cover shadow ring-1 ring-black/5"
+              className="mt-6 aspect-video w-full rounded-xl object-cover shadow ring-1 ring-black/5"
             />
           ) : null}
 
