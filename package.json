@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-rss.js",
+    "build": "vite build && node scripts/generate-writing-page.js",
     "deploy": "gh-pages -d dist -b gh-pages",
     "lint": "eslint .",
     "preview": "vite preview"

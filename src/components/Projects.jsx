@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
 import DecorativeHoneycomb from './DecorativeHoneycomb';
 import SectionHeading from './SectionHeading';
+import ProjectGrid from './ProjectGrid';
 
 const Projects = () => {
-  const [openProject, setOpenProject] = useState(null);
+  const featuredProjects = projects
+    .filter((project) => project.featured)
+    .sort((a, b) => a.featuredOrder - b.featuredOrder);
 
   return (
     <section
@@ -23,22 +24,16 @@ const Projects = () => {
           Featured Engineering Work
         </SectionHeading>
 
-        <ul className="grid grid-cols-1 items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => {
-            const cardId = `project-${index}`;
-            const isExpanded = openProject === project.slug;
+        <ProjectGrid projects={featuredProjects} />
 
-            return (
-              <li key={cardId} className="list-none h-full">
-                <ProjectCard
-                  project={project}
-                  isExpanded={isExpanded}
-                  onToggleDetails={() => setOpenProject(isExpanded ? null : project.slug)}
-                />
-              </li>
-            );
-          })}
-        </ul>
+        <div className="mt-10 text-center">
+          <a
+            href="/projects/"
+            className="inline-flex items-center justify-center rounded-md border-2 border-indigo-500 px-6 py-3 font-semibold text-lavender transition hover:bg-brand/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender"
+          >
+            View All Projects
+          </a>
+        </div>
       </div>
     </section>
   );

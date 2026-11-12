@@ -1,9 +1,8 @@
-import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 
 const Contact = ({
   title = 'Get in Touch',
   description = 'I’m a front-end-focused full stack developer open to full-time, contract, or freelance opportunities. Reach out to discuss accessible, user-first web projects or just say hello.',
-  showLiveProject = true,
 }) => {
   return (
     <section
@@ -65,7 +64,7 @@ const Contact = ({
             </a>
           </li>
 
-          {showLiveProject ? (
+          {/* {showLiveProject ? (
             <li>
               <a
                 href="https://truefidelityhealthcareadvisors.net"
@@ -79,7 +78,7 @@ const Contact = ({
                 <span className="sr-only"> (opens in a new tab)</span>
               </a>
             </li>
-          ) : null}
+          ) : null} */}
         </ul>
       </nav>
     </section>

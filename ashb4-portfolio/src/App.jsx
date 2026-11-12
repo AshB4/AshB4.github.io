@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
-import GumroadProducts from './components/GumroadProducts';
 import BackToTop from './components/BackToTop';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <Hero />
       <Projects />
       <Resume />
-      <GumroadProducts />
       <Contact />
       <Footer />
       <BackToTop />

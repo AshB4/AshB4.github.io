@@ -1,11 +1,17 @@
 import DmvKiosk from "../assets/DmvKisok.png";
-import PostPunkDash from "../assets/PostPunkDash.png";
+import EchoStudio from "../assets/EchoStudio.webp";
+import LaStormMapr from "../assets/LaStormMapR.webp";
+import OmniBar from "../assets/OmniBar.webp";
+import OrisVerba from "../assets/Oris-Verba.png";
 import RedStick from "../assets/RedStick.jpeg";
+import TurboVet from "../assets/VetTech.webp";
 import TFHA from "../assets/SHCS.png";
 
 export const projects = [
   {
     slug: 'better-mind-care',
+    featured: false,
+    showInAllProjects: false,
     eyebrow: 'Private Healthcare Project',
     title: 'Better Mind Care',
     subtitle: 'Healthcare Platform',
@@ -49,8 +55,10 @@ export const projects = [
     },
   },
   {
-    slug: 'postpunk',
-    title: 'Post Punk',
+    slug: 'echo-studio',
+    featured: true,
+    featuredOrder: 2,
+    title: 'Echo Studio',
     subtitle: 'Automation System',
     problem:
       'Manually identifying and prioritizing high-performing content/products is time-consuming and inconsistent at scale.',
@@ -58,10 +66,11 @@ export const projects = [
       'Built a content automation pipeline with scoring, scheduling, and job execution to manage multi-platform posting workflows.',
     impact:
       'Reduces manual decision-making and enables repeatable, data-driven content workflows.',
-    tech: ['Node.js', 'React', 'Zustand', 'Vite', 'Tailwind', 'JSON Pipelines'],
-    link: 'https://github.com/AshB4/N8tiveFlow',
-    img: PostPunkDash,
-    imgAlt: 'Postpunk automation dashboard showing content scoring and workflow outputs',
+    tech: ['React', 'Node.js', 'OpenAI'],
+    githubUrl: 'https://github.com/AshB4/Echo-Studio-Demo',
+    demoUrl: 'https://youtu.be/AbK1G9n1RDQ',
+    img: EchoStudio,
+    imgAlt: 'Echo Studio marketing workflow branding with Ashley Broussard portrait',
     details: {
       features: [
         'Keyword and niche-based filtering with configurable thresholds',
@@ -95,6 +104,8 @@ export const projects = [
   },
   {
     slug: 'tfha',
+    featured: false,
+    showInAllProjects: false,
     title: 'Healthcare Plan Comparison Tool',
     problem:
       'Consumers struggle to compare health plans using real coverage details, not just premiums.',
@@ -140,6 +151,8 @@ export const projects = [
   },
   {
     slug: 'dmv-kiosk',
+    featured: true,
+    featuredOrder: 4,
     title: 'DMV Kiosk Redesign',
     problem:
       'DMV kiosks are difficult to use for seniors and high-volume users, leading to errors and slow processing.',
@@ -180,6 +193,8 @@ export const projects = [
   },
   {
     slug: 'redstick-waggers',
+    featured: true,
+    featuredOrder: 5,
     title: 'Redstick Waggers',
     problem:
       'Finding parks that support specific activities is difficult due to scattered and unstructured civic data.',
@@ -188,7 +203,7 @@ export const projects = [
     impact:
       'Helps users quickly find relevant parks without manually sorting through large datasets.',
     tech: ['React Native', 'Firebase', 'Open Data BR', 'Geolocation'],
-    link: 'https://github.com/jbrackin1/RedStickWaggers',
+    githubUrl: 'https://github.com/jbrackin1/RedStickWaggers',
     img: RedStick,
     imgAlt: 'Mobile app showing dog park locations and amenities with map-based UI',
     details: {
@@ -220,8 +235,10 @@ export const projects = [
   },
   {
     slug: 'oris-verba',
-    title: 'Speech Transcription System',
-    subtitle: 'Oris-Verba',
+    featured: true,
+    featuredOrder: 6,
+    title: 'Oris-Verba',
+    subtitle: 'Speech Transcription System',
     problem:
       'Capturing and converting live speech into usable text is difficult without heavy infrastructure.',
     solution:
@@ -229,8 +246,8 @@ export const projects = [
     impact:
       'Enables low-friction, local speech-to-text workflows with real-time feedback and review signals.',
     tech: ['Python', 'FastAPI', 'Uvicorn', 'faster-whisper', 'NumPy', 'sounddevice', 'WebRTC VAD', 'React', 'Vite'],
-    link: 'https://github.com/AshB4/Oris-Verba',
-    img: null,
+    githubUrl: 'https://github.com/AshB4/Oris-Verba',
+    img: OrisVerba,
     imgAlt: 'Speech transcription interface with live captions and review highlights',
     details: {
       features: [
@@ -262,5 +279,51 @@ export const projects = [
       impact:
         'Delivers a working real-time transcription pipeline that teams can run locally and extend into production systems. Demonstrates audio processing, async system design, and practical AI integration.',
     },
+  },
+  {
+    slug: 'dealership-toolkit',
+    featured: false,
+    eyebrow: 'Contract Engagement',
+    title: 'Dealership Toolkit',
+    description: 'Built Python email automation that replaced third-party software and saved approximately $10,000 per month; also developed React applications and inventory data automation.',
+    tech: ['Python', 'React'],
+  },
+  {
+    slug: 'turbovet',
+    featured: true,
+    featuredOrder: 1,
+    eyebrow: 'TurboVets Full Stack Challenge',
+    title: 'TurboVet',
+    description: 'A multi-organization task management platform with JWT authentication and role-based access controls.',
+    tech: ['Angular', 'NestJS', 'TypeORM', 'PostgreSQL', 'JWT', 'Nx'],
+    githubUrl: 'https://github.com/AshB4/TurboVetChallenge',
+    demoUrl: 'https://youtu.be/lwTDHOJgSyg',
+    img: TurboVet,
+    imgAlt: 'TurboVet Command Center sign-in screen',
+  },
+  {
+    slug: 'la-storm-mapr',
+    featured: true,
+    featuredOrder: 3,
+    eyebrow: 'Civic Technology',
+    title: 'LAStormMapr',
+    description: 'A hurricane preparedness and shelter-tracking app for Louisiana residents, with an interactive map and preparation checklist.',
+    tech: ['React', 'Leaflet', 'Bootstrap', 'GeoJSON'],
+    githubUrl: 'https://github.com/AshB4/LaStormMapr',
+    demoUrl: 'https://youtu.be/7EOdd2xvej0',
+    img: LaStormMapr,
+    imgAlt: 'LAStormMapr interactive shelter map centered around Baton Rouge',
+  },
+  {
+    slug: 'omnibar',
+    featured: false,
+    eyebrow: 'Public fork of BrainGnosis/OmniBAR',
+    title: 'OmniBAR',
+    description: 'A Python framework for evaluating AI agents across multiple objectives, including outputs, action paths, and system state.',
+    tech: ['Python', 'LangChain', 'Pydantic'],
+    githubUrl: 'https://github.com/AshB4/OmniBAR',
+    demoUrl: 'https://youtu.be/1mEUYETDSjM',
+    img: OmniBar,
+    imgAlt: 'OmniBAR reliability studio interface alongside its Python backend in VS Code',
   },
 ];

@@ -69,22 +69,26 @@ function ProjectCard({ project, isExpanded, onToggleDetails }) {
           </p>
         ) : null}
 
-        <div className="mt-5 space-y-4">
-          <section>
-            <h4 className={sectionTitleClassName}>Problem</h4>
-            <p className={sectionBodyClassName}>{project.problem}</p>
-          </section>
+        {project.description ? (
+          <p className="mt-5 text-sm leading-6 text-muted">{project.description}</p>
+        ) : (
+          <div className="mt-5 space-y-4">
+            <section>
+              <h4 className={sectionTitleClassName}>Problem</h4>
+              <p className={sectionBodyClassName}>{project.problem}</p>
+            </section>
 
-          <section>
-            <h4 className={sectionTitleClassName}>Solution</h4>
-            <p className={sectionBodyClassName}>{project.solution}</p>
-          </section>
+            <section>
+              <h4 className={sectionTitleClassName}>Solution</h4>
+              <p className={sectionBodyClassName}>{project.solution}</p>
+            </section>
 
-          <section>
-            <h4 className={sectionTitleClassName}>Impact</h4>
-            <p className={sectionBodyClassName}>{project.impact}</p>
-          </section>
-        </div>
+            <section>
+              <h4 className={sectionTitleClassName}>Impact</h4>
+              <p className={sectionBodyClassName}>{project.impact}</p>
+            </section>
+          </div>
+        )}
 
         <div className="mt-5 border-t border-lavender/15 pt-4">
           <ul className="flex flex-wrap gap-2">
@@ -124,6 +128,28 @@ function ProjectCard({ project, isExpanded, onToggleDetails }) {
                 className={actionClassName}
               >
                 {project.linkLabel || 'View Project'} →
+              </a>
+            ) : null}
+
+            {project.githubUrl ? (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={actionClassName}
+              >
+                View Code →
+              </a>
+            ) : null}
+
+            {project.demoUrl ? (
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={actionClassName}
+              >
+                Watch Demo →
               </a>
             ) : null}
           </div>

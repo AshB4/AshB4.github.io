@@ -2,7 +2,6 @@ import { useRef } from 'react'
 import CanvasHexFrame from '../components/HexFrames'
 import AbLogo from '../assets/AbLogo.png'
 import Ash from '../assets/ColorPopAsh.webp'
-import GumroadProducts from '../components/GumroadProducts'
 import ProfileHeroCard from '../components/ProfileHeroCard'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -53,11 +52,9 @@ function Links() {
 
       </section>
 
-      <GumroadProducts />
       <Contact
         title="Let's Connect"
         description="I build things people end up using. If you want to collaborate, have an idea, or just found something interesting, reach out or explore more below."
-        showLiveProject={false}
       />
 
       <Footer showSocialLinks={false} />
