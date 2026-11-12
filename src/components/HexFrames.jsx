@@ -2,14 +2,14 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-export default function CanvasHexFrame({ containerRef }) {
+export default function CanvasHexFrame({ containerRef, columns = 32, rows = 28 }) {
   const canvasRef = useRef(null);
   const shapesRef = useRef([]);
 const stateRef = useRef({
     max: 0,
     mouse: { x: 0, y: 0, r: 0 },
-    columns: 32,     
-    rows: 28,
+    columns,
+    rows,
     baseScale: 0.98,
     minScale: 0.12,
     // Brand palette (lavender-heavy with purple/navy anchors)

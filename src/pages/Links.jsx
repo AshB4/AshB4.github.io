@@ -12,7 +12,7 @@ function Links() {
   const linksSectionRef = useRef(null)
 
   return (
-    <main className="bg-cream min-h-screen text-gray-900 font-sans">
+    <main className="bg-cream min-h-screen text-main font-sans">
       <section ref={linksSectionRef} className="relative isolate overflow-hidden py-12 sm:py-16">
         <CanvasHexFrame containerRef={linksSectionRef} />
 
@@ -28,7 +28,7 @@ function Links() {
             ]}
           />
 
-          <section className="mt-8 relative rounded-2xl bg-white/75 backdrop-blur-md p-6 sm:p-8 md:p-10 shadow-xl ring-1 ring-black/5">
+          <section className="mt-8 relative rounded-2xl bg-surface/80 backdrop-blur-md p-6 sm:p-8 md:p-10 shadow-xl ring-1 ring-white/10">
             <img
               src={AbLogo}
               alt="Ashley Broussard monogram"
@@ -39,13 +39,13 @@ function Links() {
             <p className="font-serif text-2xl sm:text-3xl font-bold text-darkpurple leading-tight pr-16">
               AI tools, chaotic creations, and digital experiments.
             </p>
-            <p className="mt-4 text-base sm:text-lg max-w-3xl text-gray-800 leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg max-w-3xl text-muted leading-relaxed">
               Built with code, curiosity, and a little bit of gremlin energy.
             </p>
             <p className="mt-3 text-base sm:text-lg max-w-3xl font-semibold text-darkpurple leading-relaxed">
               I build things people end up using.
             </p>
-            <p className="mt-3 text-base sm:text-lg max-w-3xl text-gray-800 leading-relaxed">
+            <p className="mt-3 text-base sm:text-lg max-w-3xl text-muted leading-relaxed">
               Mostly web apps, tools, and digital products built to solve problems or at least make life a little easier.
             </p>
           </section>

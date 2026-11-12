@@ -14,7 +14,7 @@ function ProfileHeroCard({
   return (
     <section
       aria-labelledby={titleId}
-      className={`rounded-2xl bg-white/65 backdrop-blur-md p-5 sm:p-6 md:p-8 shadow-xl ring-1 ring-black/5 grid items-center gap-6 sm:gap-7 md:gap-9 md:grid-cols-12 ${className}`.trim()}
+      className={`rounded-2xl bg-hero-glass/80 backdrop-blur-md p-5 sm:p-6 md:p-8 shadow-xl ring-1 ring-white/10 grid items-center gap-6 sm:gap-7 md:gap-9 md:grid-cols-12 ${className}`.trim()}
     >
       <div className="md:col-span-5">
         <img
@@ -41,7 +41,7 @@ function ProfileHeroCard({
         {paragraphs.map((text, index) => (
           <p
             key={text}
-            className={`${index === 0 ? 'mt-4' : 'mt-3'} text-base sm:text-lg max-w-2xl mx-auto md:mx-0 text-gray-800 leading-relaxed ${paragraphClassNameByIndex[index] || ''}`.trim()}
+            className={`${index === 0 ? 'mt-4' : 'mt-3'} text-base sm:text-lg max-w-2xl mx-auto md:mx-0 text-muted leading-relaxed ${paragraphClassNameByIndex[index] || ''}`.trim()}
           >
             {text}
           </p>

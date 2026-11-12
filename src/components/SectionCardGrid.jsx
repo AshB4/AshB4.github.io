@@ -11,10 +11,10 @@ function SectionCardGrid({ sections }) {
                   href={item.link}
                   target={item.link.startsWith('http') ? '_blank' : undefined}
                   rel={item.link.startsWith('http') ? 'noreferrer' : undefined}
-                  className="block h-full rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-3 sm:px-5 sm:py-4 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-500 hover:bg-indigo-100 hover:shadow"
+                  className="block h-full rounded-lg border border-brand/50 bg-brand/20 px-4 py-3 sm:px-5 sm:py-4 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-500 hover:bg-brand/30 hover:shadow"
                 >
-                  <p className="font-semibold text-indigo-900">{item.label}</p>
-                  <p className="mt-1 text-sm text-gray-700">{item.description}</p>
+                  <p className="font-semibold text-lavender">{item.label}</p>
+                  <p className="mt-1 text-sm text-muted">{item.description}</p>
                 </a>
               </li>
             ))}
