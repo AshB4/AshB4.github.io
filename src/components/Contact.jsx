@@ -9,7 +9,7 @@ const Contact = ({
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="bg-slate-50 text-gray-800 py-16 px-4 sm:px-6 text-center"
+      className="bg-main/10 text-muted py-16 px-4 sm:px-6 text-center"
     >
       <h2 id="contact-title" className="text-3xl sm:text-4xl font-serif font-bold mb-6 text-darkpurple">
         {title}
@@ -26,7 +26,7 @@ const Contact = ({
           <li>
             <a
               href="mailto:Fleurdeviefarmsllc@gmail.com"
-              className="inline-flex items-center gap-2 text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 rounded-sm"
+              className="inline-flex items-center gap-2 text-muted underline underline-offset-4 decoration-lavender hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender rounded-sm"
               aria-label="Email Ashley Broussard"
             >
               <Mail className="h-4 w-4" />
@@ -39,7 +39,7 @@ const Contact = ({
               href="https://linkedin.com/in/ashley-m-broussard-33a392253"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 rounded-sm"
+              className="inline-flex items-center gap-2 text-muted underline underline-offset-4 decoration-lavender hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender rounded-sm"
               aria-label="Open Ashley Broussard’s LinkedIn profile (opens in a new tab)"
             >
               <Linkedin className="h-4 w-4" />
@@ -53,10 +53,10 @@ const Contact = ({
               href="https://github.com/AshB4"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-700 underline underline-offset-4
-               decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline
+              className="inline-flex items-center gap-2 text-muted underline underline-offset-4
+               decoration-lavender hover:decoration-2 hover:font-bold focus-visible:outline
                 focus-visible:outline-2 focus-visible:outline-offset-2
-                 focus-visible:outline-emerald-600 rounded-sm"
+                 focus-visible:outline-lavender rounded-sm"
               aria-label="Open Ashley Broussard’s GitHub (opens in a new tab)"
             >
               <Github className="h-4 w-4" />
@@ -71,7 +71,7 @@ const Contact = ({
                 href="https://truefidelityhealthcareadvisors.net"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 rounded-sm"
+              className="inline-flex items-center gap-2 text-muted underline underline-offset-4 decoration-lavender hover:decoration-2 hover:font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lavender rounded-sm"
                 aria-label="Visit SeniorHealthcareSolution.net project (opens in a new tab)"
               >
                 <ExternalLink className="h-4 w-4" />

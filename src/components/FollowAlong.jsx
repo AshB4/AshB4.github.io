@@ -25,7 +25,7 @@ const FollowAlong = ({ className = "mt-12" }) => {
         Follow along
       </h2>
 
-      <p className="text-sm text-slate-600 text-center mt-4">
+      <p className="text-sm text-muted/80 text-center mt-4">
         Where I share new creations, experiments, and things I’m working on.
       </p>
 
@@ -36,7 +36,7 @@ const FollowAlong = ({ className = "mt-12" }) => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+              className="text-muted underline underline-offset-4 decoration-lavender hover:decoration-2 hover:font-bold"
               aria-label={link.ariaLabel}
             >
               {link.label}

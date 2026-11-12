@@ -23,10 +23,10 @@ function BlogPost() {
   }
 
   return (
-    <main className="bg-cream min-h-screen text-gray-900 font-sans">
+    <main className="bg-cream min-h-screen text-main font-sans">
       <article className="py-16 sm:py-20 px-4 sm:px-6">
-        <div className="mx-auto max-w-3xl rounded-2xl bg-white/80 backdrop-blur-md p-6 sm:p-8 md:p-10 shadow-xl ring-1 ring-black/5">
-          <p className="text-sm font-semibold text-slate-500">
+        <div className="mx-auto max-w-3xl rounded-2xl bg-surface/85 backdrop-blur-md p-6 sm:p-8 md:p-10 shadow-xl ring-1 ring-white/10">
+          <p className="text-sm font-semibold text-muted/75">
             <time dateTime={post.date}>{formatDate(post.date)}</time>
           </p>
 
@@ -38,12 +38,12 @@ function BlogPost() {
             <img
               src={post.coverImageUrl}
               alt={post.coverImageAlt || ""}
-              className="mt-6 aspect-video w-full rounded-xl object-cover shadow ring-1 ring-black/5"
+              className="mt-6 aspect-video w-full rounded-xl object-cover shadow ring-1 ring-white/10"
             />
           ) : null}
 
           <div
-            className="mt-8 space-y-5 text-slate-700 leading-relaxed"
+            className="mt-8 space-y-5 text-muted leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
@@ -51,7 +51,7 @@ function BlogPost() {
             {post.tags.map((tag) => (
               <li
                 key={tag}
-                className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600"
+                className="rounded-full bg-brand/20 px-3 py-1 text-xs font-semibold text-muted/80"
               >
                 {tag}
               </li>
@@ -61,7 +61,7 @@ function BlogPost() {
           <p className="mt-8">
             <a
               href="/blog"
-              className="text-slate-700 underline underline-offset-4 decoration-slate-700 hover:decoration-2 hover:font-bold"
+              className="text-muted underline underline-offset-4 decoration-lavender hover:decoration-2 hover:font-bold"
             >
               Back to Blog
             </a>

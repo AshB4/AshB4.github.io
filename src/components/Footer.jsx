@@ -5,7 +5,7 @@ const Footer = ({ showSocialLinks = true }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="site-footer" className="bg-purple-900 text-slate-100 mt-2">
+    <footer id="site-footer" className="bg-brand text-main mt-2">
       <div className="mx-auto max-w-7xl px-4 py-8 text-center">
         {/* Visual fun w/ an accessible alt for SR users */}
         <p className="text-base">

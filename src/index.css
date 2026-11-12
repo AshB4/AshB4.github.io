@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.matte-paper {
+  position: relative;
+  isolation: isolate;
+}
+
+.matte-paper::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  background-image: url('./assets/paper-texture.svg');
+  background-repeat: repeat;
+  background-size: 160px 160px;
+  content: '';
+  opacity: 0.35;
+  mix-blend-mode: screen;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2.5vw, 2rem);
+  text-align: center;
+}
+
+.section-heading__text {
+  min-width: 0;
+}
+
+.section-heading__rule {
+  display: block;
+  flex: 1 1 0;
+  min-width: 2rem;
+  max-width: 12rem;
+  height: 1px;
+  background: #A993D5;
+  box-shadow: 0 0 6px rgb(169 147 213 / 22%);
+  opacity: 0.7;
+}
+
+.decorative-honeycomb {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.decorative-honeycomb__cluster {
+  position: absolute;
+  width: clamp(100px, 14vw, 185px);
+  height: auto;
+  overflow: visible;
+  fill: none;
+  stroke: #A993D5;
+  stroke-width: 1.5;
+  opacity: 0.14;
+}
+
+.decorative-honeycomb__cell--blue {
+  stroke: #8296CC;
+}
+
+@media (max-width: 639px) {
+  .section-heading__rule {
+    display: none;
+  }
+
+  .decorative-honeycomb {
+    display: none;
+  }
+}

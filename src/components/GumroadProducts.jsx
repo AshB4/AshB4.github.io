@@ -111,7 +111,7 @@ const recommended = [
 
 function ProductCard({ title, description, image, link, cta, isComingSoon = false }) {
   return (
-    <article className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition text-left">
+    <article className="bg-surface rounded-lg shadow p-6 hover:shadow-lg transition text-left">
       {image ? (
         <img
           src={image}
@@ -121,15 +121,15 @@ function ProductCard({ title, description, image, link, cta, isComingSoon = fals
         />
       ) : null}
       <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-700 mb-4">{description}</p>
+      <p className="text-muted mb-4">{description}</p>
       {isComingSoon ? (
-        <p className="inline-block text-purple-700 font-semibold">{cta}</p>
+        <p className="inline-block text-lavender font-semibold">{cta}</p>
       ) : (
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-purple-700 font-semibold underline focus:outline-none focus:ring-2 focus:ring-purple-500 rounded"
+          className="inline-block text-lavender font-semibold underline focus:outline-none focus:ring-2 focus:ring-purple-500 rounded"
           aria-label={`Open ${title} in a new tab`}
         >
           {cta} {'->'}
@@ -143,7 +143,7 @@ function GumroadProducts() {
   return (
     <section
       id="products"
-      className="py-16 sm:py-20 px-4 sm:px-6 bg-cream text-gray-900 text-center"
+      className="py-16 sm:py-20 px-4 sm:px-6 bg-cream text-main text-center"
       aria-labelledby="products-heading"
     >
       <h2 id="products-heading" className="text-3xl sm:text-4xl font-serif font-bold mb-6 text-darkpurple">
@@ -169,7 +169,7 @@ function GumroadProducts() {
           Stuff I Actually Use
         </h2>
 
-        <p className="text-sm text-slate-600 text-center mb-8 max-w-xl mx-auto">
+        <p className="text-sm text-muted/80 text-center mb-8 max-w-xl mx-auto">
           A few things I use or want in my setup while building, sketching, or working on ideas.
         </p>
 
@@ -186,7 +186,7 @@ function GumroadProducts() {
           ))}
         </div>
 
-        <p className="text-xs text-slate-500 text-center mt-4">
+        <p className="text-xs text-muted/75 text-center mt-4">
           Some links may be affiliate links, which means I may earn a small commission at no extra cost to you.
         </p>
       </section>
