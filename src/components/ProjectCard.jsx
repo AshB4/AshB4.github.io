@@ -9,7 +9,7 @@ const actionClassName =
 function DetailSection({ title, items, body }) {
   return (
     <section>
-      <h5 className={sectionTitleClassName}>{title}</h5>
+      <h4 className={sectionTitleClassName}>{title}</h4>
       {items ? (
         <ul className="mt-2 space-y-2 pl-5 text-sm leading-6 text-muted list-disc marker:text-indigo-500">
           {items.map((item) => (
@@ -27,7 +27,7 @@ function ProjectCard({ project, isExpanded, onToggleDetails }) {
   const detailsId = `${project.slug}-details`;
 
   return (
-    <article className="relative flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-lavender/25 bg-project-card p-5 shadow-lg shadow-black/20 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30 sm:p-6">
+    <article id={project.slug} className="relative flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-lavender/25 bg-project-card p-5 shadow-lg shadow-black/20 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30 sm:p-6">
       <span
         aria-hidden="true"
         className="pointer-events-none absolute -top-11 -left-8 h-28 w-28 bg-gradient-to-br from-brand/30 to-tech-blue/30 blur-[1px]"
@@ -161,11 +161,22 @@ function ProjectCard({ project, isExpanded, onToggleDetails }) {
             className="mt-5 rounded-2xl border border-lavender/15 bg-gradient-to-br from-brand/25 via-surface to-tech-blue/15 p-4 sm:p-5"
           >
             <div className="space-y-4">
+              <DetailSection title="Problem" body={project.problem} />
+              <DetailSection title="Solution" body={project.solution} />
               <DetailSection title="Key Features" items={project.details.features} />
               <DetailSection title="Technical Highlights" items={project.details.technicalHighlights} />
-              <DetailSection title="Key Decisions" items={project.details.keyDecisions} />
+              <DetailSection title="Engineering Decisions" items={project.details.engineeringDecisions || project.details.keyDecisions} />
               <DetailSection title="Challenges" items={project.details.challenges} />
-              <DetailSection title="Impact" body={project.details.impact} />
+              {project.details.plannedWork ? (
+                <DetailSection title="Planned Work" items={project.details.plannedWork} />
+              ) : null}
+              {project.details.prototypeNotes ? (
+                <DetailSection title="Prototype Notes" items={project.details.prototypeNotes} />
+              ) : null}
+              <DetailSection
+                title="Outcome"
+                body={project.details.outcome || project.details.impact || project.impact}
+              />
             </div>
           </div>
         ) : null}

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Blog from './pages/Blog.jsx'
 import Links from './pages/Links.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
+import Services from './pages/Services.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,6 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/blog/*" element={<Navigate to="/blog" replace />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/*" element={<Navigate to="/projects/" replace />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/*" element={<Navigate to="/services/" replace />} />
         <Route path="/feed.xml" element={<Navigate to="/blog" replace />} />
         <Route path="/links" element={<Links />} />
       </Routes>
